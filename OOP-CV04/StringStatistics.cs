@@ -46,7 +46,7 @@ namespace OOP_CV04
 
             //char[] separators = { '.', '!', '?' };
             //string[] subs = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-            string[] subs = Regex.Split(text, @"[.!?]\s[A-Z]");
+            string[] subs = Regex.Split(text, @"[.!?]\s[A-Z]");                                 //tečka/otazník/vykřčník-whitespace-velké_písmeno
             foreach (String item in subs)
             {
                 sentenceCount += 1;
